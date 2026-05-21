@@ -1,0 +1,57 @@
+/* ─── Global Reset & Variables ─── */
+
+:root {
+  /* Color Palette matching design */
+  --color-bg: #f4f6f8;
+  --color-header-bg: #071324;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+  
+  --color-accent: #e65100;
+  --color-accent-light: rgba(230, 81, 0, 0.1);
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+
+  --color-grid-high: #0f172a;
+  --color-grid-mid: #64748b;
+  --color-grid-empty: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Typography Utils ─── */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ─── Layout Utils ─── */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.flex-1 { flex: 1; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.relative { position: relative; }
+.absolute { position: absolute; }
